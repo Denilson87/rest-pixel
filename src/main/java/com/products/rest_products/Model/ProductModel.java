@@ -24,5 +24,59 @@ public class ProductModel implements Serializable {
     @Column(nullable = false)
     private LocalDateTime registrationDate;
 
+    public UUID getId() {
+        return id;
+    }
 
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getProductName() {
+        return ProductName;
+    }
+
+    public void setProductName(String productName) {
+        ProductName = productName;
+    }
+
+    public String getProductFamily() {
+        return ProductFamily;
+    }
+
+    public void setProductFamily(String productFamily) {
+        ProductFamily = productFamily;
+    }
+
+    public Integer getCategory() {
+        return Category;
+    }
+
+    public void setCategory(Integer category) {
+        Category = category;
+    }
+
+    public Integer getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        Quantity = quantity;
+    }
+
+    public String getBarcode() {
+        return Barcode;
+    }
+
+    public void setBarcode(String barcode) {
+        Barcode = barcode;
+    }
+
+    public LocalDateTime getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(LocalDateTime registrationDate) {
+        this.registrationDate = registrationDate;
+    }
 }
