@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface ProductRepository extends JpaRepository<ProductModel, Long> {
     boolean existsByBarcode(String Barcode);
     boolean existsByProductFamily(String ProductFamily);
+    boolean existsByCategory(String Category);
 }
