@@ -5,6 +5,7 @@ import jakarta.validation.constraints.Size;
 
 public class ProductDto {
     @NotBlank
+    @Size(max =80)
     private String ProductName;
     @NotBlank
     @Size(max =50)
