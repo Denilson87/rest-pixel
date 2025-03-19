@@ -9,6 +9,13 @@ public class ProductDto {
     @NotBlank
     @Size(max =50)
     private String ProductFamily;
+    @NotBlank
+    private String Category;
+    @NotBlank
+    private String Quantity;
+    @NotBlank
+    private String Barcode;
+
 
     public String getProductName() {
         return ProductName;
@@ -50,12 +57,6 @@ public class ProductDto {
         Barcode = barcode;
     }
 
-    @NotBlank
-    private String Category;
-    @NotBlank
-    private String Quantity;
-    @NotBlank
-    private String Barcode;
 
 
 }
