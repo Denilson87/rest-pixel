@@ -41,6 +41,6 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<Page<ProductModel>>getAllproducts(@PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.ASC) Pageable pageable) {
-        return ResponseEntity.status((HttpStatus.OK).body(productService.findAll(pageable)));
+        return ResponseEntity.status(HttpStatus.OK).body(productService.findAll(pageable));
     }
 }
